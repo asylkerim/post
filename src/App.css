@@ -1,0 +1,76 @@
+.wrap{
+    position: relative;
+    max-width: 1200px;
+    margin: 140px auto 0;
+}
+.card{
+    display: flex;
+    padding: 20px;
+    border: 1px solid #EDEEED;
+    box-shadow:  0 0 0 5px rgba(0, 0, 0, 0.03);
+    flex-basis: calc(33.333% -40px);
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin:  0 20px 20px 20px;
+    background: white;
+    position: relative;
+}
+.card-image{
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    margin: 0 2rem 0 0;
+    border: 0;
+    padding: 0;
+    flex: 1 0 60%;
+    max-width: 60%;
+}
+.card-image img{
+    width: 100%;
+    margin: 0;
+}
+.button-controls{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px
+}
+button{
+    border: 2px solid black;
+    background: none;
+    flex-basis: 48%;
+    display: inline-block;
+    line-height: 2;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: greenyellow;
+    transition: all 0.2s;
+    box-sizing: padding-box;
+    cursor: pointer;
+}
+button:hover{
+    background-color: darkslategrey;
+    outline: 0;
+}
+.card-comments{
+    flex: 1 0 40%;
+    max-width: 35%;
+}
+.comments-item{
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f2;
+    resize: vertical;
+}
+.comments-item-delete{
+    padding: 5px 15px 5px 5px;
+    cursor: pointer;;
+    font-size: 20px;
+}
